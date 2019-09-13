@@ -94,7 +94,7 @@ footer {
 
 input, textarea, select, .uneditable-input {
   border: 1px solid #bbb;
-  width: 100%;
+  width: 80%;
   margin-bottom: 15px;
   @include box_sizing;
 }
@@ -199,4 +199,36 @@ span.picture {
   padding: 15px;
   font-size: 14px;
   color: white;
+}
+
+.share-form {
+  border:1px solid black
+}
+
+fieldset {
+  display: block;
+  margin-inline-start: 2px;
+  margin-inline-end: 2px;
+  padding-block-start: 0.35em;
+  padding-inline-start: 0.75em;
+  padding-inline-end: 0.75em;
+  padding-block-end: 0.625em;
+  min-inline-size: min-content;
+  border-width: 2px;
+  border-style: groove;
+  border-color: threedface;
+  border-image: initial;
+}
+
+fieldset legend {
+  width: auto;
+}
+
+.form-content {
+  width: 30%;
+  margin: 30px auto;
+}
+
+.f-right {
+  float: right;
 }

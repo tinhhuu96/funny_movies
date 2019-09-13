@@ -1,0 +1,14 @@
+<div class='form-content'>
+  <%= form_for(:movie, url: share_path) do |f| %>
+    <fieldset>
+      <legend>Share a Youtube movie</legend>
+      <div class="field">
+        <%= f.label :link %>
+        <%= f.text_field :link, class: 'f-right' %>
+      </div>
+      <div class="actions">
+        <%= f.submit "Share", class: 'f-right' %>
+      </div>
+    </fieldset>
+  <% end %>
+</div>
