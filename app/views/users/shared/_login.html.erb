@@ -1,0 +1,6 @@
+<%= form_for(:user, url: session_path(:user)) do |f| %>
+  <li class='login-field'><%= f.text_field :email %></li>
+  <li class='login-field'><%= f.password_field :password %></li>
+  <li class='login-field'><%= f.submit 'Login' %></li>
+  <li class='login-field'><%= link_to 'Register', new_user_registration_path %></li>
+<% end %>

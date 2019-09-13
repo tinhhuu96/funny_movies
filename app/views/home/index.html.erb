@@ -1,0 +1,7 @@
+<div>
+  <% if @movies.present? %>
+    <ul class='microposts'>
+      <%= render partial: 'movie', collection: @movies %>
+    </ul>
+  <% end %>
+</div>

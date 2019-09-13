@@ -26,7 +26,12 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
+gem 'devise' # Devise is a flexible authentication solution for Rails based on Warden
+gem "bootstrap-sass"
+gem 'bootstrap', '~> 4.2.1'
+gem 'jquery-rails'
+gem 'kaminari' # A Scope & Engine based, clean, powerful, customizable and sophisticated paginator for modern web app frameworks and ORMs
+gem 'enumerize' # Enumerated attributes with I18n and ActiveRecord/Mongoid/MongoMapper/Sequel support
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
@@ -39,6 +44,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'pry' # debug
 end
 
 group :development do
