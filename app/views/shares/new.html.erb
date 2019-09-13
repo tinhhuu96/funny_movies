@@ -1,5 +1,6 @@
 <div class='form-content'>
   <%= form_for(:movie, url: share_path) do |f| %>
+    <%= f.hidden_field :share_type, value: 'youtube' %>
     <fieldset>
       <legend>Share a Youtube movie</legend>
       <div class="field">

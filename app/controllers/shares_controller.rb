@@ -17,6 +17,6 @@ class SharesController < ApplicationController
   private 
 
   def movie_params
-    params.require(:movie).permit(:link)
+    params.require(:movie).permit(:link, :share_type)
   end
 end

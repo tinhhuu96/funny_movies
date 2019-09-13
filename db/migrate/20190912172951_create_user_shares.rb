@@ -4,7 +4,7 @@ class CreateUserShares < ActiveRecord::Migration[5.2]
       t.string :link
       t.text :description
       t.integer :user_id
-      t.string :type
+      t.string :share_type
       
       t.timestamps
     end

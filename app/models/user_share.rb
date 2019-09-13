@@ -1,9 +1,9 @@
 class UserShare < ApplicationRecord
   extend Enumerize
 
-  validates :link, presence: true
+  validates :link, :share_type, presence: true
 
   belongs_to :user
   
-  enumerize :type, in: %i[youtube facebook], predicates: true
+  enumerize :share_type, in: %i[youtube], predicates: true
 end
